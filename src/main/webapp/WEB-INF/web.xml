@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.doctor.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/doctor_log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>viewdoc</servlet-name>
+		<servlet-class>com.doctor.ViewDocServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewdoc</servlet-name>
+		<url-pattern>/view_doc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>doctorinsert</servlet-name>
+		<servlet-class>com.doctor.Doctorinsert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doctorinsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatedoctor</servlet-name>
+		<servlet-class>com.doctor.UpdateDoctorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updatedoctor</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deletedoctor</servlet-name>
+		<servlet-class>com.doctor.ViewDocToDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deletedoctor</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deletedoc</servlet-name>
+		<servlet-class>com.doctor.DeleteDoctorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deletedoc</servlet-name>
+		<url-pattern>/deletedoc</url-pattern>
+	</servlet-mapping>
+         
+         
+</web-app>

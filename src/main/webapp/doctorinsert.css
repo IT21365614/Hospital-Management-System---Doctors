@@ -1,0 +1,53 @@
+@charset "ISO-8859-1";
+body{
+	background-color: #fbcb71;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	
+}
+
+.firsthalf{
+	line-height: 80px;
+	position: absolute; left: 150px; top: 150px;
+}
+
+.secondhalf{
+	line-height: 80px;
+	position: absolute; left: 800px; top: 150px;
+}
+
+#header1{
+	text-decoration: underline;
+	font-size: 40px;
+	text-align: center;
+}
+
+input[type = "text"]{
+	width: 350px;
+	border-radius: 6px;
+	height: 40px;
+	position: absolute; left: 160px;
+	border: none; 
+}
+
+input[type = "email"]{
+	
+	width: 350px;
+	border-radius: 6px;
+	height: 40px;
+	position: absolute; left: 160px;
+	border: none; 
+}
+
+#btn{
+	font-size: 15px;
+	background-color: #FF7D00;
+	border: none;
+	border-radius: 8px;
+	padding: 15px 30px;
+	transition: 0.5s;
+	position: absolute; top: 640px; left: 1200px; 
+}
+
+#btn:hover{
+	background-color: #ffb66c;
+}
